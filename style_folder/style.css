@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&display=swap');
+
+
+:root{
+--main_color: #0F0F0F;
+--secondMain_color: #232D3F;
+--thirdMain_color: #005B41;
+--fourthMain_color: #008170;
+--mainText_font: "Jersey 25";
+--textFont_big: 1.5rem;
+--textFont_medium: 1rem;
+--textFont_small: 0.7rem;
+
+}
+
+/* - - - - -HEADER- - - - - */
+
+header{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main_color);
+}
+/* -Logo- */ 
+
+.logo img{
+    height: 9rem;
+}
+
+/* -Navigation Bar- */
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+li a{
+    cursor: grab;
+    font-family: var(--mainText_font), sans-serif;
+    font-size: var(--textFont_medium);
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+li a:hover{
+    transform: scale(1.5);
+    color: var(--fourthMain_color);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+@media (min-aspect-ratio: 18/9) {
+    .bg_video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 18/9) {
+    .bg_video{
+        width: auto;
+        height: 100%;
+    }
+}
