@@ -172,10 +172,25 @@ li a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbowMove 5s linear infinite;
+    border: 3px solid var(--thirdMain_color);
+    border-radius: 3rem;
+    padding: 0.7rem;
 }
 
 .main_info p{
     font-family: var(--secondText_font);
     font-size: var(--textFont_big);
     padding: 1rem;
+    line-height: 1.3;
+    border-left: 3px solid var(--thirdMain_color);
+    border-right: 3px solid var(--thirdMain_color);
+    border-radius: 1rem;
+    transition: 0.5s ease;
+    max-width: 77rem;
+}
+
+.main_info p:hover{
+    border-left-color: var(--fourthMain_color);
+    border-right-color: var(--fourthMain_color);
+    box-shadow: 0 0 20px rgba(138,240,240,0.2);
 }
