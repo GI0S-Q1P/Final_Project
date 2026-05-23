@@ -90,6 +90,13 @@ li a:hover{
     justify-content: center;
 }
 
+.hero_content{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero h1{
     cursor: default;
     text-transform: uppercase;
@@ -120,6 +127,27 @@ li a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbowMove 5s linear infinite;
+}
+
+.planet_images{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    z-index: 4;
+}
+
+.planet_images img{
+    height: 7rem;
+    width: 7rem;
+    transition: all 0.5s ease;
+}
+
+.planet_images img:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px var(--fourthMain_color));
 }
 
 .bg_video{
@@ -308,4 +336,7 @@ footer h5{
     font-family: var(--secondText_font);
     font-size: var(--textFont_small);
     transition: 0.5s ease;
+}
+footer img{
+    height: 5rem;
 }
