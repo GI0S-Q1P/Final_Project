@@ -63,6 +63,7 @@ header{
     flex-direction: row;
     gap: 1.5rem;
 }
+
 li a{
     cursor: grab;
     font-family: var(--mainText_font), sans-serif;
@@ -394,6 +395,13 @@ footer img{
     filter: drop-shadow(0 0 3rem var(--thirdMain_color));
 }
 
+#pluto_MI img{
+    width: 100%;
+    max-width: 30rem;
+    transition: all 0.5s ease;
+    filter: drop-shadow(0 0 3rem var(--thirdMain_color));
+}
+
 .MI_Div img:hover{
     transform: scale(1.05) rotate(10deg);
     filter: drop-shadow(0 0 3rem var(--fourthMain_color));
@@ -402,14 +410,11 @@ footer img{
 .MI_Div p{
     margin: 0;
     line-height: 1.5;
-
     max-height: 350px;
     overflow-y: auto;
     font-family: var(--secondText_font);
     font-size: var(--textFont_big);
-
     padding: 1rem;
-
     border-left: 3px solid var(--thirdMain_color);
     border-right: 3px solid var(--thirdMain_color);
     border-radius: 1rem;
