@@ -1,0 +1,442 @@
+
+:root{
+--main_color: #0F0F0F;
+--secondMain_color: #232D3F;
+--thirdMain_color: #005B41;
+--fourthMain_color: #05b099;
+--mainText_font: "Jersey 25";
+--secondText_font: "Jersey 15";
+--textFont_extraLarge: 3.5rem;
+--textFont_large: 3rem;
+--textFont_huge: 2.5rem;
+--textFont_big: 1.5rem;
+--textFont_medium: 1rem;
+--textFont_small: 0.7rem;
+--textFont_tiny: 0.5rem;
+--textFont_extraTiny: 0.3rem;
+
+}
+
+/* PC */
+
+@media(max-width:1200px){
+    .hero h1{
+        font-size: var(--textFont_large);
+    }
+
+    .main_info p{
+        max-width: 60rem;
+    }
+
+    .formation_and_evolution{
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    /* other html */
+
+    .MI_Div{
+        max-width: 65rem;
+    }
+
+    .general_characteristics p, .rotation p, .core p{
+        max-width: 65rem;
+        margin: 0 auto;
+    }
+    .hero_content_SO img{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .MI_Div img{
+        height: 15rem;
+        width: 15rem;
+    }
+}
+
+@media(max-width:1100px){
+    .MI_Div{
+        max-width: 55rem;
+    }
+
+    .general_characteristics p, .rotation p, .core p{
+        max-width: 55rem;
+        margin: 0 auto;
+    }
+}
+
+/* LAPTOP */
+
+@media(max-width:1024px){
+    .hero h1{
+        font-size: var(--textFont_large);
+    }
+
+    .main_info p{
+        max-width: 55rem;
+    }
+
+    .formation_and_evolution{
+        max-width: 55rem;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:950px){
+    .hero h1{
+        font-size: var(--textFont_huge);
+    }
+
+    .planet_images img{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .main_info p{
+        max-width: 50rem;
+    }
+
+    .formation_and_evolution{
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    .formation_and_evolution h2{
+        font-size: var(--textFont_huge);
+    }
+
+    /* other html */
+    .MI_Div{
+            max-width: 65rem;
+        }
+
+    .general_characteristics p, .rotation p, .core p{
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:850px){
+    .hero h1{
+        font-size: var(--textFont_big);
+    }
+
+    .navbar a{
+        font-size: var(--textFont_small);
+    }
+
+    .planet_images img{
+        height: 4rem;
+        width: 4rem;
+    }
+    .main_info p{
+        max-width: 45rem;
+    }
+
+    .formation_and_evolution{
+        max-width: 45rem;
+        margin: 0 auto;
+    }
+
+    .formation_and_evolution h2{
+        margin-top: 1rem;
+        font-size: var(--textFont_big);
+    }
+
+    /* other html */
+    .MI_Div{
+            max-width: 55rem;
+        }
+    
+    .MI_Div img{
+            height: 15rem;
+            height: 15rem;
+        }
+        
+    .general_characteristics p, .rotation p, .core p{
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+
+}
+
+/* TABLET */
+
+@media(max-width:768px){
+    .planet_images img{
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .main_info p{
+        max-width: 40rem;
+    }
+
+    .formation_and_evolution{
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:700px){
+    .logo img{
+        height: 7rem;
+    }
+
+    .navbar a{
+        font-size: var(--textFont_tiny);
+    }
+
+    .main_info p{
+        max-width: 35rem;
+    }
+
+    .formation_and_evolution{
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+
+    .formation_and_evolution h2{
+        font-size: var(--textFont_medium);
+    }
+
+    /* other html */
+
+    .MI_Div{
+            max-width: 50rem;
+        }
+        
+    .general_characteristics p, .rotation p, .core p{
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:650px){
+    .hero h1{
+        font-size: var(--textFont_medium);
+    }
+
+    .planet_images img{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .main_info p{
+        max-width: 30rem;
+    }
+
+    .formation_and_evolution{
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+    .formation_and_evolution h2{
+        font-size: var(--textFont_small);
+    }
+
+    #extra_page{
+        display: none;
+    }
+}
+
+@media(max-width:600px){
+    .hero h1{
+        font-size: var(--textFont_medium);
+    }
+
+    .planet_images img{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .main_info p{
+        max-width: 30rem;
+    }
+
+    .formation_and_evolution{
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+    .formation_and_evolution h2{
+        font-size: var(--textFont_small);
+    }
+
+    .navbar a{
+        font-size: var(--textFont_extraTiny);
+    }
+
+    /* other html */
+
+    .MI_Div{
+            max-width: 70rem;
+            flex-direction: column;
+        }
+        
+    .general_characteristics h2, .rotation h2, .core h2{
+        font-size: var(--textFont_big);
+        margin-bottom: 1rem;
+    }
+    .general_characteristics p, .rotation p, .core p{
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    .hero_content_SO img{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+
+@media(max-width:550px){
+    .logo img{
+        height: 5rem;
+    }
+    .planet_images img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .main_info p{
+        max-width: 25rem;
+    }
+
+    .formation_and_evolution{
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    .formation_and_evolution h2{
+        font-size: var(--textFont_extraTiny);
+    }
+}
+
+@media(max-width: 500px){
+    .MI_Div{
+        max-width: 90rem;
+    }
+
+    .MI_Div img{
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .hero_content_SO img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .general_characteristics p, .rotation p, .core p{
+        max-width: 23rem;
+        margin: 0 auto;
+    }
+
+    .hero_content_SO img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+/* PHONE */
+
+@media(max-width:480px){
+    .planet_images img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .navbar a{
+        display: none;
+    }
+
+    .main_info p{
+        max-width: 20rem;
+    }
+
+    .formation_and_evolution h2{
+        padding: 1rem;
+    }
+
+    .formation_and_evolution h3{
+        font-size: var(--textFont_big);
+    }
+
+    .formation_and_evolution{
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+
+    .hero_content_SO img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+@media(max-width:450px){
+    .hero h1{
+        font-size: var(--textFont_small);
+    }
+
+    .planet_images img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .main_info p{
+        max-width: 17rem;
+    }
+
+    .formation_and_evolution{
+        max-width: 17rem;
+        margin: 0 auto;
+    }
+
+    /* other html */
+
+    .general_characteristics p, .rotation p, .core p{
+        max-width: 17rem;
+        margin: 0 auto;
+    }
+}
+
+/* SMALL PHONE */
+
+@media(max-width:350px){
+    .main_info p{
+        max-width: 15rem;
+    }
+
+    footer h4{
+        font-size: var(--textFont_small);
+    }
+
+    .formation_and_evolution{
+        max-width: 15rem;
+        margin: 0 auto;
+    }
+    .main_info h2{
+        font-size: var(--textFont_big);
+    }
+
+    /* other html */
+
+    .general_characteristics p, .rotation p, .core p{
+        max-width: 15rem;
+        margin: 0 auto;
+    }
+
+    .hero_content_SO img{
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+@media(max-width:320px){
+    footer h4{
+        font-size: var(--textFont_small);
+    }
+}
+
+
+
+
+
