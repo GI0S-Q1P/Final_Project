@@ -13,7 +13,12 @@
         <div class="logo">
             <a href="../index.html"><img src="../media_folder/logo.png" alt="logo"></a>
         </div>
-        <div class="navbar">
+        <button class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar" id="navbar">
             <nav>
                 <ul>
                     <li>
@@ -125,5 +130,12 @@
         <h4>2026 © Solar-Space project. All rights reserved</h4>
         <h5>Note: This site is about our Solar System</h5>
     </footer>
+<script>
+    const burger = document.getElementById("burger");
+    const navbar = document.getElementById("navbar");
+    burger.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+});
+</script>
 </body>
 </html>
